@@ -1,9 +1,8 @@
-
 package lab2 ;
 
 import java.util.Scanner ;
 
-public class lab2_10 {
+public class Shopping_Cart {
 
     public static class Product {
         private String name ;
