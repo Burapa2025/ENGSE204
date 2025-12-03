@@ -28,7 +28,7 @@ public class Shopping_Cart {
 
         public void addProduct(Product p) {
             if (itemCount >= items.length) {
-                System.out.println("ตะกร้าเต็มแล้ว (สูงสุด 10 รายการ) ไม่สามารถเพิ่มสินค้าได้อีก") ;
+                System.out.println("The cart is full (maximum 10 items). No more items can be added") ;
                 return;
             }
             items[itemCount] = p ;
@@ -51,12 +51,12 @@ public class Shopping_Cart {
         int productCount = input.nextInt() ;
 
         if (productCount > 10) {
-            System.out.println("จำนวนสินค้ามากกว่า 10 รายการ จะนับเฉพาะ 10 รายการแรก") ;
+            System.out.println("If the number of products is more than 10, only the first 10 items will be counted") ;
             productCount = 10 ;
         }
 
         if (productCount < 0) {
-            System.out.println("จำนวนสินค้าไม่ถูกต้อง") ;
+            System.out.println("The quantity of products is incorrect") ;
             input.close() ;
             return ;
         }
@@ -72,7 +72,7 @@ public class Shopping_Cart {
             System.out.print("Enter Product Price: ") ;
             double price = input.nextDouble() ;
             if (price < 0) {
-                System.out.println("ราคาสินค้าไม่ควรติดลบ จะถือว่าเป็น 0.0") ;
+                System.out.println("The price of the product should not be negative, it will be considered 0.0") ;
                 price = 0.0 ;
             }
 
